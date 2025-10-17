@@ -37,6 +37,16 @@ namespace final_05_lab_exer_1
             {
                 outputFile.WriteLine(getInput);
             }
+
+            MessageBox.Show("File created successfully!");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmRegistration registrationForm = new FrmRegistration();
+            registrationForm.Show();
+
+            this.Hide();
         }
     }
 }
