@@ -28,7 +28,7 @@ namespace final_05_lab_exer_1
             string middleInitial = txtMI.Text.Trim();
             string age = txtAge.Text.Trim();
             string gender = cmbGender.SelectedItem?.ToString();
-            string birthday = dtpBirthday.Value.ToLongDateString();
+            string birthday = dtpBirthday.Value.ToString("yyyy-MM-dd");
             string contactNo = txtContactNo.Text.Trim();
 
             string basePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
